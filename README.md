@@ -1,4 +1,4 @@
-# TCC---Virtualiza-o-Open-Source-Para-Aplica-es-Focadas-em-Infrastrutura-Computacional
+# TCC - Virtualização Open-Source Para Aplicações Focadas em Infrastrutura Computacional
 
 
 Este Trabalho tem como foco a virtualização de recursos computacionais.
