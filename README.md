@@ -5,15 +5,15 @@ Este Trabalho tem como foco a virtualização de recursos computacionais.
 A virtualização onde se pode atingir grande poder computacional voltado 
 a disponibilidade e de escalonamento de serviços, armazenamento, para prover 
 grandes estruturas seja de sistema ou ate mesmo de hardware com isso veio a 
-computação de alto desempenho com aplicações desses serviços em máquinas virtuais.
+computação de alto desempenho com aplicações desses serviços focado em máquinas virtuais.
 
 Disponibilidade:
 Para essas aplicações tenhamos um serviço ininterrupto como a proposta de servidores
-web e servidores dns, a disponilidade atrelado a virtualização permite maior flexibilidade e prover de mais recursos
+web e servidores dns, a disponilidade atrelado a virtualização permite maior flexibilidade e prover de mais recursos por estar em ambiente de máquinas virtuais.
 
 Escalonamento:
 Junto as máquinas de virtualização a troca de contexto muito uitlizado por estrutura 
-computacional onde prove de mais recursos em aumentar as demandas, essas estruturas muitas das vezes estão em provisionamnto em data-centers.
+computacional  provendo de mais recursos para um aumento de demandas, essas orquestrações muitas das vezes estão em provisionamnto em data-centers onde muitas máquinas virtuais.
 
 
 Manutenção:
@@ -22,20 +22,20 @@ cria, backup dos sistemas das VMs , e se houver a necessidade de escalonar aplic
 camada de virtualização onde estão os sistema virtuais.
 
 Armazenamento:
-Todas parte de storage ficam disposto para cada VMs onde cada um deles tem seu próprio armazenamento. 
+Todas parte de storage ficam disposto para cada VMs onde cada um deles tem seu próprio armazenamento, cada sistema então consiste em ter seu proprio storage para o trabalho isolado de cada um deles. 
 
 Processamento:
 Contudo a virtualização de recurso computacional uma das principais funções é prove mais processamento para a orquestração de máquinas virtuais, 
-o intuito dessa aplicação tem como requisito obter maior processanamento pois não foi atrela para balancemaneto de carga, 
-ao escalonar o processamento permitir analisar e processar grandes quantidades de dados, mais utilizado para computação de alto desempenho 
+o intuito dessa aplicação tem como requisito obter maior processanamento ganhando performace em sistema ao qual venha desempenhar suas funções. 
+Ao escalonar o processamento permitir analisar e processar grandes quantidades de dados, este trabalho seria mais utilizado para computação de alto desempenho onde divide o processamentos em vários computadores virtuais afim de se obter maior vantagem computacional
 
 Falha de serviço:
 Como obtenção da camadad de virtualizaçao permitir reduzir a falhas de serviços adotado para os servidores, 
 isso é permitido atravez do método de virtualizar e com a disponibilidade de recursos virtuais, garantindo mais
-redundâncias e previnir que tenha falhas de algum serviço.
+redundâncias e previnir que tenha falhas de algum serviço criando outras instâncias das máquinas virtuais.
 
 Server Web
-Para que tenhamos um ambinete de avaliação, podemos equiparar os mesmo tipos de serviços em nuvem utilizado, pensando nisso essa implementação tem como objetivo analisar
+Para que tenhamos um ambiente de avaliação, podemos equiparar os mesmo tipos de serviços em nuvem utilizado, pensando nisso essa implementação tem como objetivo analisar
 a disponilidade de serviços por contar um servidor web onde esta fazendo parte em VMs primário e secundário, assim tenhamos um dispobinilidade e reduncia.
 	Docker	
 Utilizado a plataforma para obtenção e prover um container com a aplicaçao web.
@@ -43,11 +43,11 @@ Utilizado a plataforma para obtenção e prover um container com a aplicaçao we
 O Apache cria uma imagen desse container com os arquivos da aplicação.
 
 Bind9
-	Barkley internet domain, utilziado para resolver o domínio local dos servidores web
+	Barkley internet domain, utilziado para resolver o domínio local dos servidores Web
   
 FirewallD
-Utilizado apenas para liberar os serviços HTTP e portais o quais os serviços e servidores necessitam para fazer o compartilhamento em rede das aplicação em questão
-domínio implementado local subindo a aplicação docker em container onde dispobiliza um um serviço de virtualição com o apache.
+Utilizado apenas para liberar os serviços HTTP e portas os quais os serviços e servidores necessitam para fazer o compartilhamento em rede das aplicação em questão,
+domínio implementado local, ao subir oserviço da aplicação docker em container onde dispobiliza um um serviço de virtualição com o apache.
 
 Server DNS:
 A implementação do DNS nessa avaliação, permiti que resolva nomes de domínios agora do servidor web previamente
