@@ -110,6 +110,8 @@ netstat -anu | grep 53
 
 ------------ config dns----------------
 
+apt-get install -y bind9
+
 bind -> /etc/bind/
 
 configurar os arquivos - named.conf e named.conf.default-zones
