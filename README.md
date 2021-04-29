@@ -36,7 +36,7 @@ redundâncias e previnir que tenha falhas de algum serviço criando outras inst�
 
 Server Web
 Para que tenhamos um ambiente de avaliação, podemos equiparar os mesmo tipos de serviços em nuvem utilizado, pensando nisso essa implementação tem como objetivo analisar
-a disponilidade de serviços por contar um servidor web onde esta fazendo parte em VMs primário e secundário, assim tenhamos um dispobinilidade e reduncia.
+a disponilidade de serviços por contar um servidor web onde esta fazendo parte em VMs primário e secundário, assim tenhamos um disponibilidade e reduncia.
 	Docker	
 Utilizado a plataforma para obtenção e prover um container com a aplicaçao web.
  	Apache
