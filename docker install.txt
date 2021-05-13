@@ -173,17 +173,28 @@ iptables -A INPUT -p tcp --syn -j DROP
 yum update
 yum upgrade
 
+centos
 yum install firewalld
+
+---------------- Ubuntu/otherDistro -------------
+apt-get update
+apt-get upgrade
+apt install firewalld
+
 
 verificar pacotes instalado -->  yum list installed | grep firewalld
 
---> virificar firewall = firewalld-cmd --permanent --list-all
+--> verificar firewall = firewall-cmd --permanent --list-all
 
---> firewall-cmd --remove=dhcpv6 --permanent
-
+------------   EXEMPLO  -----------------
+--> firewall-cmd --remove-service=dhcpv6 --permanent
+--> firewall-cmd --remove-port=80/tcp --permanent
+--> firewall-cmd --add-service=http --permanent
 --> firewall-cmd --reload
 
 ---------- ADD serviço --------
 
 firewall-cmd --add-service=nome_serviço --permanent 
+
+--------------- ICMP -----------
 
