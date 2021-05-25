@@ -209,6 +209,6 @@ adiciona o bloqueio de ping
 Defini o alvo para DROP
 --> firewall-cmd --set-target=DROP
 
-Valida o serviço de bloqueio do icmp
+Valida o serviço do icmp
 
 --> firewall-cmd --runtime-to-permanent
