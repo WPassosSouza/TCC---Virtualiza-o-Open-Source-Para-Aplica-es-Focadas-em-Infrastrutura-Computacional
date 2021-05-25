@@ -197,4 +197,18 @@ verificar pacotes instalado -->  yum list installed | grep firewalld
 firewall-cmd --add-service=nome_serviço --permanent 
 
 --------------- ICMP -----------
+listar todos os (ICMPtipos) disponíveis
 
+--> firewall-cmd --get-icmptypes
+
+--> firewall-cmd --info-icmptype=<icmptype>
+
+adiciona o bloqueio de ping 
+--> firewall-cmd --add-icmp-block-inversion
+
+Defini o alvo para DROP
+--> firewall-cmd --set-target=DROP
+
+Valida o serviço de bloqueio do icmp
+
+--> firewall-cmd --runtime-to-permanent
