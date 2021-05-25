@@ -212,3 +212,5 @@ Defini o alvo para DROP
 Valida o serviço do icmp
 
 --> firewall-cmd --runtime-to-permanent
+
+OBS: caso o serviço do ICMP continua à responder os Pings, execute apos a configuração do mesmo --> systemctl firewalld stop | systemctl firewalld start
